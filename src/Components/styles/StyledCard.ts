@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const StyledCard = styled.div`
-  background: ${(props) => props.color};
+
+export const StyledCard = styled.div<{bgColor: string}>`
+  background: ${(props) => props.bgColor};
   padding: 30px;
   color: hsla(0, 0%, 100%, 0.75);
   width: 225px;

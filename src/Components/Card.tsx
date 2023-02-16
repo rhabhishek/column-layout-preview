@@ -5,10 +5,10 @@ import {ContentType} from "../content";
 
 export const Card = ({item: {title, icon, body, bgColor}}: { item: ContentType}) => {
 
-    return <StyledCard color={bgColor}>
+    return <StyledCard bgColor={bgColor}>
         <img alt="" src={icon}/>
         <h1>{title}</h1>
         <p>{body}</p>
-        <StyledButton color={bgColor}>Learn More</StyledButton>
+        <StyledButton bgColor={bgColor}>Learn More</StyledButton>
     </StyledCard>;
 }
